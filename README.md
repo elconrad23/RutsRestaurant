@@ -1,4 +1,4 @@
-# Rutz Restaurant Landing Page
+# Ruts Restaurant Landing Page
 
 Modern restaurant landing page scaffold with a sidebar navigation experience.
 
