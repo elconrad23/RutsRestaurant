@@ -1,0 +1,25 @@
+{
+  "name": "rutsrestaurant",
+  "version": "1.0.0",
+  "description": "Modern restaurant landing page scaffold with a sidebar navigation experience.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elconrad23/RutsRestaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/elconrad23/RutsRestaurant/issues"
+  },
+  "homepage": "https://github.com/elconrad23/RutsRestaurant#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8"
+  }
+}

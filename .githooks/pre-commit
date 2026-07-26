@@ -1,0 +1,24 @@
+#!/bin/sh
+# Sample pre-commit hook for project-local linting and tests.
+
+echo "Running project-local pre-commit checks..."
+
+if [ -f package.json ] && command -v npm >/dev/null 2>&1; then
+  if npm run lint --silent; then
+    echo "Lint passed."
+  else
+    echo "Lint failed. Aborting commit."
+    exit 1
+  fi
+
+  if npm test --silent; then
+    echo "Tests passed."
+  else
+    echo "Tests failed. Aborting commit."
+    exit 1
+  fi
+else
+  echo "No package.json found or npm not available. Skipping lint/test checks."
+fi
+
+exit 0
